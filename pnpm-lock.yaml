@@ -15,8 +15,8 @@ importers:
         specifier: link:../masonry-hooks
         version: link:../masonry-hooks
       '@dashkite/masonry-markdown':
-        specifier: ^0.11.14
-        version: 0.11.14
+        specifier: link:../masonry-markdown
+        version: link:../masonry-markdown
       '@dashkite/masonry-pug':
         specifier: link:../masonry-pug
         version: link:../masonry-pug
@@ -975,9 +975,6 @@ packages:
   '@dashkite/masonry-hooks@0.8.0':
     resolution: {integrity: sha512-GqZt5YlYURo4j1v7qNjP0QxZ+Qb3pts/G2aPgVtL3ZHGwEYtj2fCf58nNUwmygdK89n3LiEY6RvR0uvmmKXMPA==}
 
-  '@dashkite/masonry-markdown@0.11.14':
-    resolution: {integrity: sha512-JWwD+6vT8Kp3kUaS22RJIr4oTCSlfbpbslZiNtp08PlKqtCD2qZYobA6AScWlIgvIO+cx0brWBBVbt48h+SfvA==}
-
   '@dashkite/masonry-module@0.7.0':
     resolution: {integrity: sha512-84Vqt/deTv61xQu0KMm+dReuYiaha1izVQWgw7/LiTikmTDTvgQGC6cmNF1Cngqivntqn6CKnrbnJfk1B/dk+w==}
 
@@ -1774,11 +1771,6 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
-
-  marked@8.0.1:
-    resolution: {integrity: sha512-eEbeEb/mJwh+sNLEhHOWtxMgjN/NEwZUBs1nkiIH2sTQTq07KmPMQ48ihyvo5+Ya56spVOPhunfGr6406crCVA==}
-    engines: {node: '>= 16'}
-    hasBin: true
 
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -4778,10 +4770,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@dashkite/masonry-markdown@0.11.14':
-    dependencies:
-      marked: 8.0.1
-
   '@dashkite/masonry-module@0.7.0(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/dolores': 0.1.0(@aws-sdk/credential-provider-node@3.529.0)
@@ -5769,8 +5757,6 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
-
-  marked@8.0.1: {}
 
   merge-stream@2.0.0: {}
 

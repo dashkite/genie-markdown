@@ -6,6 +6,7 @@ import { pug } from "@dashkite/masonry-pug"
 import { markdown } from "@dashkite/masonry-markdown"
 import T from "@dashkite/masonry-targets"
 
+
 # we only support Pug now, but this approach is extensible
 dictionary =
   pug: ( context ) ->
@@ -32,14 +33,16 @@ wrapper = ( context ) ->
     # get the handler for this template
     handler = dictionary[ extension[ 1.. ]]
 
-    # Return the promise for the pug transform
     handler context
 
   else
-    # Return the promise for the standard markdown transform
-    markdown context
 
+    md context
+
+md = null
 export default ( Genie ) ->
+
+  md = await markdown()
 
   Genie.define "markdown:build", "markdown:clean", ->
     options = Genie.get "markdown"
@@ -47,7 +50,7 @@ export default ( Genie ) ->
     do M.start [
       T.glob options.targets
       H.read
-      wrapper
+      M.transform wrapper
       T.extension ".html"
       T.write "build/${ build.target }"
     ]
