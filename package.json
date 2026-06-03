@@ -44,8 +44,8 @@
   },
   "dependencies": {
     "@dashkite/masonry": "0.25.14",
-    "@dashkite/masonry-hooks": "link:../masonry-hooks",
-    "@dashkite/masonry-markdown": "link:../masonry-markdown",
+    "@dashkite/masonry-hooks": "^0.12.26",
+    "@dashkite/masonry-markdown": "^0.11.27",
     "@dashkite/masonry-pug": "link:../masonry-pug",
     "@dashkite/masonry-targets": "0.13.9"
   }
