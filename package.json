@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/genie-markdown",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Genie preset for Markdown, with optional support for templates",
   "keywords": [],
   "homepage": "https://github.com/dashkite/genie-markdown#readme",
